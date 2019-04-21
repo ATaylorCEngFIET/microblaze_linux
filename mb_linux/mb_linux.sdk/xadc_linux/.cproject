@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="xilinx.gnu.mbellinux.exe.debug.1056801314">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="xilinx.gnu.mbellinux.exe.debug.1056801314" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.xilinx.sdk.managedbuilder.XELF.mbellinux" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="xilinx.gnu.mbellinux.exe.debug.1056801314" name="Debug" parent="xilinx.gnu.mbellinux.exe.debug">
+					<folderInfo id="xilinx.gnu.mbellinux.exe.debug.1056801314." name="/" resourcePath="">
+						<toolChain id="xilinx.gnu.mbellinux.exe.debug.toolchain.516161916" name="Xilinx MicroBlaze Linux Toolchain (Little-Endian)" superClass="xilinx.gnu.mbellinux.exe.debug.toolchain">
+							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.mbellinux" id="xilinx.mbellinux.target.gnu.base.debug.21029145" isAbstract="false" name="Debug Platform" superClass="xilinx.mbellinux.target.gnu.base.debug"/>
+							<builder buildPath="${workspace_loc:/xadc_linux}/Debug" enableAutoBuild="true" id="xilinx.gnu.mbellinux.toolchain.builder.debug.1029573158" managedBuildOn="true" name="GNU make.Debug" superClass="xilinx.gnu.mbellinux.toolchain.builder.debug"/>
+							<tool id="xilinx.gnu.mbellinux.c.toolchain.assembler.debug.506846854" name="MBEL Linux gcc assembler" superClass="xilinx.gnu.mbellinux.c.toolchain.assembler.debug">
+								<inputType id="xilinx.gnu.assembler.input.1254562835" superClass="xilinx.gnu.assembler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.mbellinux.c.toolchain.compiler.debug.1448916737" name="MBEL Linux gcc compiler" superClass="xilinx.gnu.mbellinux.c.toolchain.compiler.debug">
+								<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.1162654558" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.1932074160" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<inputType id="xilinx.gnu.mbellinux.c.compiler.input.115827500" name="C source files" superClass="xilinx.gnu.mbellinux.c.compiler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.mbellinux.cxx.toolchain.compiler.debug.1839465014" name="MBEL Linux g++ compiler" superClass="xilinx.gnu.mbellinux.cxx.toolchain.compiler.debug">
+								<option defaultValue="gnu.c.optimization.level.none" id="xilinx.gnu.compiler.option.optimization.level.2104540172" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.499612729" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+							</tool>
+							<tool id="xilinx.gnu.mbellinux.toolchain.archiver.101278787" name="MBEL Linux archiver" superClass="xilinx.gnu.mbellinux.toolchain.archiver"/>
+							<tool id="xilinx.gnu.mbellinux.c.toolchain.linker.debug.2123958717" name="MBEL Linux gcc linker" superClass="xilinx.gnu.mbellinux.c.toolchain.linker.debug">
+								<inputType id="xilinx.gnu.linker.input.500669802" superClass="xilinx.gnu.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+								<inputType id="xilinx.gnu.linker.input.lscript.74815441" name="Linker Script" superClass="xilinx.gnu.linker.input.lscript"/>
+							</tool>
+							<tool id="xilinx.gnu.mbellinux.cxx.toolchain.linker.debug.609531749" name="MBEL Linux g++ linker" superClass="xilinx.gnu.mbellinux.cxx.toolchain.linker.debug"/>
+							<tool id="xilinx.gnu.mbellinux.size.debug.110382417" name="MBEL Linux Print Size" superClass="xilinx.gnu.mbellinux.size.debug"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="xilinx.gnu.mbellinux.exe.release.1002204510">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="xilinx.gnu.mbellinux.exe.release.1002204510" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.xilinx.sdk.managedbuilder.XELF.mbellinux" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="xilinx.gnu.mbellinux.exe.release.1002204510" name="Release" parent="xilinx.gnu.mbellinux.exe.release">
+					<folderInfo id="xilinx.gnu.mbellinux.exe.release.1002204510." name="/" resourcePath="">
+						<toolChain id="xilinx.gnu.mbellinux.exe.release.toolchain.1481742984" name="Xilinx MicroBlaze Linux Toolchain (Little-Endian)" superClass="xilinx.gnu.mbellinux.exe.release.toolchain">
+							<targetPlatform binaryParser="com.xilinx.sdk.managedbuilder.XELF.mbellinux" id="xilinx.mbellinux.target.gnu.base.release.1085594973" isAbstract="false" name="Release Platform" superClass="xilinx.mbellinux.target.gnu.base.release"/>
+							<builder buildPath="${workspace_loc:/xadc_linux}/Release" enableAutoBuild="true" id="xilinx.gnu.mbellinux.toolchain.builder.release.1945781984" managedBuildOn="true" name="GNU make.Release" superClass="xilinx.gnu.mbellinux.toolchain.builder.release"/>
+							<tool id="xilinx.gnu.mbellinux.c.toolchain.assembler.release.1528337539" name="MBEL Linux gcc assembler" superClass="xilinx.gnu.mbellinux.c.toolchain.assembler.release">
+								<inputType id="xilinx.gnu.assembler.input.1206844588" superClass="xilinx.gnu.assembler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.mbellinux.c.toolchain.compiler.release.1318288453" name="MBEL Linux gcc compiler" superClass="xilinx.gnu.mbellinux.c.toolchain.compiler.release">
+								<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.344936351" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.4436800" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<inputType id="xilinx.gnu.mbellinux.c.compiler.input.390079454" name="C source files" superClass="xilinx.gnu.mbellinux.c.compiler.input"/>
+							</tool>
+							<tool id="xilinx.gnu.mbellinux.cxx.toolchain.compiler.release.1101964483" name="MBEL Linux g++ compiler" superClass="xilinx.gnu.mbellinux.cxx.toolchain.compiler.release">
+								<option defaultValue="gnu.c.optimization.level.more" id="xilinx.gnu.compiler.option.optimization.level.592147421" superClass="xilinx.gnu.compiler.option.optimization.level" valueType="enumerated"/>
+								<option id="xilinx.gnu.compiler.option.debugging.level.964221688" superClass="xilinx.gnu.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+							</tool>
+							<tool id="xilinx.gnu.mbellinux.toolchain.archiver.2051656096" name="MBEL Linux archiver" superClass="xilinx.gnu.mbellinux.toolchain.archiver"/>
+							<tool id="xilinx.gnu.mbellinux.c.toolchain.linker.release.1363629203" name="MBEL Linux gcc linker" superClass="xilinx.gnu.mbellinux.c.toolchain.linker.release">
+								<inputType id="xilinx.gnu.linker.input.1401106028" superClass="xilinx.gnu.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+								<inputType id="xilinx.gnu.linker.input.lscript.1559115899" name="Linker Script" superClass="xilinx.gnu.linker.input.lscript"/>
+							</tool>
+							<tool id="xilinx.gnu.mbellinux.cxx.toolchain.linker.release.1688043618" name="MBEL Linux g++ linker" superClass="xilinx.gnu.mbellinux.cxx.toolchain.linker.release"/>
+							<tool id="xilinx.gnu.mbellinux.size.release.642594421" name="MBEL Linux Print Size" superClass="xilinx.gnu.mbellinux.size.release"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="xadc_linux.xilinx.gnu.mbellinux.exe.41740453" name="Xilinx MicroBlaze Linux Executable (Little-Endian)" projectType="xilinx.gnu.mbellinux.exe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.mbellinux.exe.debug.1056801314;xilinx.gnu.mbellinux.exe.debug.1056801314.;xilinx.gnu.mbellinux.c.toolchain.compiler.debug.1448916737;xilinx.gnu.mbellinux.c.compiler.input.115827500">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.MBELLinuxGCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.mbellinux.exe.release.1002204510;xilinx.gnu.mbellinux.exe.release.1002204510.">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.MBELLinuxGCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.mbellinux.exe.debug.1056801314;xilinx.gnu.mbellinux.exe.debug.1056801314.">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.MBELLinuxGCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="xilinx.gnu.mbellinux.exe.release.1002204510;xilinx.gnu.mbellinux.exe.release.1002204510.;xilinx.gnu.mbellinux.c.toolchain.compiler.release.1318288453;xilinx.gnu.mbellinux.c.compiler.input.390079454">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.xilinx.managedbuilder.ui.MBELLinuxGCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

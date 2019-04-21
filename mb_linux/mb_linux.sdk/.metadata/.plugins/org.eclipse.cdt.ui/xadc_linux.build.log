@@ -1,0 +1,13 @@
+13:40:04 **** Auto Build of configuration Debug for project xadc_linux ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: MBEL Linux gcc compiler
+microblazeel-xilinx-linux-gnu-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:20:10: fatal error: xilinx-xadc.h: No such file or directory
+ #include "xilinx-xadc.h"
+          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:20: src/helloworld.o] Error 1
+
+13:40:05 Build Finished (took 490ms)
+

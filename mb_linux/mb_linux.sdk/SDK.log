@@ -1,0 +1,658 @@
+10:41:18 INFO  : Registering command handlers for SDK TCF services
+10:41:19 INFO  : Launching XSCT server: xsct.bat -interactive C:\hdl_projects\mb_linux\mb_linux.sdk\temp_xsdb_launch_script.tcl
+10:41:23 INFO  : XSCT server has started successfully.
+10:41:23 INFO  : Successfully done setting XSCT server connection channel  
+10:41:27 INFO  : Successfully done setting SDK workspace  
+10:41:27 INFO  : ***** MYVIVADO is set to 'C:\Xilinx\Vivado\2017.4\patches\AR70530\vivado' *****
+10:41:27 INFO  : Processing command line option -hwspec C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf.
+10:45:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_intc_v3_8::
+10:45:05 ERROR : (XSDB Server)generate : can't read "source_name(3)": no such element in array
+    while executing
+"string compare -nocase $source_name($i) "system""
+    ("foreach" body line 18)
+    invoked from within
+"foreach periph $periphs {
+        #update global array of Interrupt sources for this periph
+        intc_update_source_array $periph
+
+        lappend ..."
+    (procedure "xredefine_intc" line 21)
+    invoked from within
+"xredefine_intc $drv_handle $file_handle"
+    (procedure "xdefine_canonical_xpars" line 72)
+    invoked from within
+"xdefine_canonical_xpars $drv_handle "xparameters.h" "Intc" "DEVICE_ID" "C_BASEADDR" "C_HIGHADDR" "C_KIND_OF_INTR" "C_HAS_FAST" "C_IVAR_RESET_VALUE" "C..."
+    (procedure "::sw_intc_v3_8::generate" line 57)
+    invoked from within
+"::sw_intc_v3_8::generate microblaze_0_axi_intc"
+ERROR: [Hsi 55-1442] Error(s) w
+10:45:05 ERROR : (XSDB Server)hile running TCL procedure generate()
+
+10:45:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1450] Error: running 
+10:45:05 ERROR : (XSDB Server)generate_bsp.
+
+10:45:05 ERROR : Error generating bsp sources: Failed in generating sources
+10:45:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_intc_v3
+10:45:19 ERROR : (XSDB Server)_8::generate : can't read "source_name(3)": no such element in array
+    while executing
+"string compare -nocase $source_name($i) "system""
+    ("foreach" body line 18)
+    invoked from within
+"foreach periph $periphs {
+        #update global array of Interrupt sources for this periph
+        intc_update_source_array $periph
+
+        lappend ..."
+    (procedure "xredefine_intc" line 21)
+    invoked from within
+"xredefine_intc $drv_handle $file_handle"
+    (procedure "xdefine_canonical_xpars" line 72)
+    invoked from within
+"xdefine_canonical_xpars $drv_handle "xparameters.h" "Intc" "DEVICE_ID" "C_BASEADDR" "C_HIGHADDR" "C_KIND_OF_INTR" "C_HAS_FAST" "C
+10:45:19 ERROR : (XSDB Server)_IVAR_RESET_VALUE" "C..."
+    (procedure "::sw_intc_v3_8::generate" line 57)
+    invoked from within
+"::sw_intc_v3_8::generate microblaze_0_axi_intc"
+
+10:45:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1442] Error(s) while running 
+10:45:19 ERROR : (XSDB Server)TCL procedure generate()
+
+10:45:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1450] Error: running
+10:45:19 ERROR : (XSDB Server) generate_bsp.
+
+10:45:19 ERROR : Error generating bsp sources: Failed in generating sources
+10:54:44 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1552819918834,  Project:1552818703291
+10:54:44 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+10:54:52 INFO  : Copied contents of C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+10:54:53 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:54:53 INFO  : Clearing existing target manager status.
+10:54:53 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+10:54:53 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:00:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:00:45 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+11:00:45 INFO  : 'jtag frequency' command is executed.
+11:00:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+11:00:48 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:00:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:00:49 INFO  : Context for processor 'microblaze_0' is selected.
+11:00:49 INFO  : System reset is completed.
+11:00:52 INFO  : 'after 3000' command is executed.
+11:00:52 INFO  : Context for processor 'microblaze_0' is selected.
+11:00:53 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf' is downloaded to processor 'microblaze_0'.
+11:00:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf
+----------------End of Script----------------
+
+11:00:53 INFO  : Memory regions updated for context MicroBlaze #0
+11:00:53 INFO  : Memory regions updated for context MicroBlaze #0
+11:00:53 INFO  : Context for processor 'microblaze_0' is selected.
+11:00:53 INFO  : 'con' command is executed.
+11:00:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+11:00:54 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hw_test_app.elf_on_local.tcl'
+11:02:44 INFO  : Disconnected from the channel tcfchan#1.
+11:02:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:02:45 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+11:02:45 INFO  : 'jtag frequency' command is executed.
+11:02:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+11:02:47 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:02:47 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:02:47 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:47 INFO  : System reset is completed.
+11:02:50 INFO  : 'after 3000' command is executed.
+11:02:50 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:51 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf' is downloaded to processor 'microblaze_0'.
+11:02:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf
+----------------End of Script----------------
+
+11:02:51 INFO  : Memory regions updated for context MicroBlaze #0
+11:02:51 INFO  : Memory regions updated for context MicroBlaze #0
+11:02:51 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:51 INFO  : 'con' command is executed.
+11:02:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+11:02:51 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hw_test_app.elf_on_local.tcl'
+11:06:01 INFO  : Inferring section assignments and sizes from elf file: C:\hdl_projects\mb_linux\mb_linux.sdk\hw_test_app\Debug\hw_test_app.elf
+11:06:28 INFO  : Successfully generated C:\hdl_projects\mb_linux\mb_linux.sdk\hw_test_app\src\lscript.ld.
+11:06:28 INFO  : Applying linker script to all configurations of project hw_test_app.
+11:06:28 INFO  : Setting rebuild state to true for all configurations of project hw_test_app.
+11:06:33 INFO  : Disconnected from the channel tcfchan#2.
+11:06:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:06:35 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+11:06:35 INFO  : 'jtag frequency' command is executed.
+11:06:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+11:06:37 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:06:37 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:06:37 INFO  : Context for processor 'microblaze_0' is selected.
+11:06:37 INFO  : System reset is completed.
+11:06:40 INFO  : 'after 3000' command is executed.
+11:06:40 INFO  : Context for processor 'microblaze_0' is selected.
+11:06:40 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf' is downloaded to processor 'microblaze_0'.
+11:06:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf
+----------------End of Script----------------
+
+11:06:40 INFO  : Memory regions updated for context MicroBlaze #0
+11:06:40 INFO  : Memory regions updated for context MicroBlaze #0
+11:06:40 INFO  : Context for processor 'microblaze_0' is selected.
+11:06:41 INFO  : 'con' command is executed.
+11:06:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+11:06:41 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hw_test_app.elf_on_local.tcl'
+11:11:46 INFO  : Disconnected from the channel tcfchan#3.
+11:11:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:11:48 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+11:11:48 INFO  : 'jtag frequency' command is executed.
+11:11:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+11:11:50 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+11:11:50 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:11:50 INFO  : Context for processor 'microblaze_0' is selected.
+11:11:50 INFO  : System reset is completed.
+11:11:53 INFO  : 'after 3000' command is executed.
+11:11:53 INFO  : Context for processor 'microblaze_0' is selected.
+11:11:54 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/peripheral_test/Debug/peripheral_test.elf' is downloaded to processor 'microblaze_0'.
+11:11:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/peripheral_test/Debug/peripheral_test.elf
+----------------End of Script----------------
+
+11:11:54 INFO  : Memory regions updated for context MicroBlaze #0
+11:11:54 INFO  : Memory regions updated for context MicroBlaze #0
+11:11:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:11:55 INFO  : 'con' command is executed.
+11:11:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+11:11:55 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_peripheral_test.elf_on_local.tcl'
+11:34:50 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1552822336860,  Project:1552819918834
+11:34:50 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+11:34:54 INFO  : Copied contents of C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+11:34:55 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:35:00 INFO  : 
+11:35:01 INFO  : Updating hardware inferred compiler options for hw_test_app.
+11:35:02 INFO  : Updating hardware inferred compiler options for mem_test.
+11:35:03 INFO  : Updating hardware inferred compiler options for peripheral_test.
+11:35:03 INFO  : Clearing existing target manager status.
+11:35:03 INFO  : Closing and re-opening the MSS file of ther project hw_test_app_bsp
+11:35:03 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:35:05 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+12:20:52 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1552824046261,  Project:1552822336860
+12:20:52 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+12:21:42 INFO  : Copied contents of C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+12:21:43 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:21:48 INFO  : 
+12:21:49 INFO  : Updating hardware inferred compiler options for hw_test_app.
+12:21:50 INFO  : Updating hardware inferred compiler options for mem_test.
+12:21:50 INFO  : Updating hardware inferred compiler options for peripheral_test.
+12:21:50 INFO  : Clearing existing target manager status.
+12:21:50 INFO  : Closing and re-opening the MSS file of ther project hw_test_app_bsp
+12:21:51 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+12:21:53 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+12:33:00 INFO  : Successfully generated C:\hdl_projects\mb_linux\mb_linux.sdk\mem_test\src\lscript.ld.
+12:33:00 INFO  : Applying linker script to all configurations of project mem_test.
+12:33:00 INFO  : Setting rebuild state to true for all configurations of project mem_test.
+12:38:44 INFO  : Disconnected from the channel tcfchan#4.
+12:38:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:38:46 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+12:38:46 INFO  : 'jtag frequency' command is executed.
+12:38:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+12:38:48 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:38:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:38:48 INFO  : Context for processor 'microblaze_0' is selected.
+12:38:48 INFO  : System reset is completed.
+12:38:51 INFO  : 'after 3000' command is executed.
+12:38:51 INFO  : Context for processor 'microblaze_0' is selected.
+12:38:51 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Release/mem_test.elf' is downloaded to processor 'microblaze_0'.
+12:38:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Release/mem_test.elf
+----------------End of Script----------------
+
+12:38:51 INFO  : Memory regions updated for context MicroBlaze #0
+12:38:51 INFO  : Memory regions updated for context MicroBlaze #0
+12:38:52 INFO  : Context for processor 'microblaze_0' is selected.
+12:38:52 INFO  : 'con' command is executed.
+12:38:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+12:38:52 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_release_mem_test.elf_on_local.tcl'
+12:39:17 INFO  : Disconnected from the channel tcfchan#5.
+12:39:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:39:19 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+12:39:19 INFO  : 'jtag frequency' command is executed.
+12:39:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+12:39:21 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:39:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:39:21 INFO  : Context for processor 'microblaze_0' is selected.
+12:39:21 INFO  : System reset is completed.
+12:39:24 INFO  : 'after 3000' command is executed.
+12:39:24 INFO  : Context for processor 'microblaze_0' is selected.
+12:39:25 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Release/mem_test.elf' is downloaded to processor 'microblaze_0'.
+12:39:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Release/mem_test.elf
+----------------End of Script----------------
+
+12:39:25 INFO  : Memory regions updated for context MicroBlaze #0
+12:39:25 INFO  : Memory regions updated for context MicroBlaze #0
+12:39:25 INFO  : Context for processor 'microblaze_0' is selected.
+12:39:25 INFO  : 'con' command is executed.
+12:39:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+12:39:25 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_release_mem_test.elf_on_local.tcl'
+12:40:24 INFO  : Disconnected from the channel tcfchan#6.
+12:40:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:40:25 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+12:40:25 INFO  : 'jtag frequency' command is executed.
+12:40:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+12:40:28 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:40:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:40:28 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:28 INFO  : System reset is completed.
+12:40:31 INFO  : 'after 3000' command is executed.
+12:40:31 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:31 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'microblaze_0'.
+12:40:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf
+----------------End of Script----------------
+
+12:40:31 INFO  : Memory regions updated for context MicroBlaze #0
+12:40:31 INFO  : Memory regions updated for context MicroBlaze #0
+12:40:32 INFO  : Context for processor 'microblaze_0' is selected.
+12:40:32 INFO  : 'con' command is executed.
+12:40:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+12:40:32 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_release_mem_test.elf_on_local.tcl'
+12:41:02 INFO  : Disconnected from the channel tcfchan#7.
+12:41:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:41:03 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+12:41:03 INFO  : 'jtag frequency' command is executed.
+12:41:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+12:41:06 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:41:06 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:41:06 INFO  : Context for processor 'microblaze_0' is selected.
+12:41:06 INFO  : System reset is completed.
+12:41:09 INFO  : 'after 3000' command is executed.
+12:41:09 INFO  : Context for processor 'microblaze_0' is selected.
+12:41:09 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'microblaze_0'.
+12:41:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf
+----------------End of Script----------------
+
+12:41:09 INFO  : Memory regions updated for context MicroBlaze #0
+12:41:09 INFO  : Memory regions updated for context MicroBlaze #0
+12:41:10 INFO  : Context for processor 'microblaze_0' is selected.
+12:41:10 INFO  : 'con' command is executed.
+12:41:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+12:41:10 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_release_mem_test.elf_on_local.tcl'
+12:41:54 INFO  : Disconnected from the channel tcfchan#8.
+12:41:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:41:56 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+12:41:56 INFO  : 'jtag frequency' command is executed.
+12:41:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+12:41:58 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:41:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:41:58 INFO  : Context for processor 'microblaze_0' is selected.
+12:41:58 INFO  : System reset is completed.
+12:42:01 INFO  : 'after 3000' command is executed.
+12:42:01 INFO  : Context for processor 'microblaze_0' is selected.
+12:42:01 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'microblaze_0'.
+12:42:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf
+----------------End of Script----------------
+
+12:42:02 INFO  : Memory regions updated for context MicroBlaze #0
+12:42:02 INFO  : Memory regions updated for context MicroBlaze #0
+12:42:02 INFO  : Context for processor 'microblaze_0' is selected.
+12:42:03 INFO  : 'con' command is executed.
+12:42:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+12:42:03 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_release_mem_test.elf_on_local.tcl'
+12:42:50 INFO  : Disconnected from the channel tcfchan#9.
+12:42:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:42:51 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+12:42:51 INFO  : 'jtag frequency' command is executed.
+12:42:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+12:42:53 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:42:53 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:42:53 INFO  : Context for processor 'microblaze_0' is selected.
+12:42:54 INFO  : System reset is completed.
+12:42:57 INFO  : 'after 3000' command is executed.
+12:42:57 INFO  : Context for processor 'microblaze_0' is selected.
+12:42:57 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf' is downloaded to processor 'microblaze_0'.
+12:42:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf
+----------------End of Script----------------
+
+12:42:57 INFO  : Memory regions updated for context MicroBlaze #0
+12:42:57 INFO  : Memory regions updated for context MicroBlaze #0
+12:42:57 INFO  : Context for processor 'microblaze_0' is selected.
+12:42:57 INFO  : 'con' command is executed.
+12:42:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+12:42:57 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hw_test_app.elf_on_local.tcl'
+12:43:20 INFO  : Disconnected from the channel tcfchan#10.
+12:43:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:43:21 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+12:43:21 INFO  : 'jtag frequency' command is executed.
+12:43:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+12:43:23 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:43:23 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:43:23 INFO  : Context for processor 'microblaze_0' is selected.
+12:43:24 INFO  : System reset is completed.
+12:43:27 INFO  : 'after 3000' command is executed.
+12:43:27 INFO  : Context for processor 'microblaze_0' is selected.
+12:43:27 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf' is downloaded to processor 'microblaze_0'.
+12:43:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf
+----------------End of Script----------------
+
+12:43:27 INFO  : Memory regions updated for context MicroBlaze #0
+12:43:27 INFO  : Memory regions updated for context MicroBlaze #0
+12:43:27 INFO  : Context for processor 'microblaze_0' is selected.
+12:43:27 INFO  : 'con' command is executed.
+12:43:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+12:43:27 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hw_test_app.elf_on_local.tcl'
+12:44:20 INFO  : Disconnected from the channel tcfchan#11.
+12:44:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:44:21 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+12:44:21 INFO  : 'jtag frequency' command is executed.
+12:44:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+12:44:24 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:44:24 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:44:24 INFO  : Context for processor 'microblaze_0' is selected.
+12:44:24 INFO  : System reset is completed.
+12:44:27 INFO  : 'after 3000' command is executed.
+12:44:27 INFO  : Context for processor 'microblaze_0' is selected.
+12:44:27 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf' is downloaded to processor 'microblaze_0'.
+12:44:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/hw_test_app/Debug/hw_test_app.elf
+----------------End of Script----------------
+
+12:44:27 INFO  : Memory regions updated for context MicroBlaze #0
+12:44:27 INFO  : Memory regions updated for context MicroBlaze #0
+12:44:27 INFO  : Context for processor 'microblaze_0' is selected.
+12:44:27 INFO  : 'con' command is executed.
+12:44:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+12:44:27 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_hw_test_app.elf_on_local.tcl'
+12:44:49 INFO  : Disconnected from the channel tcfchan#12.
+12:44:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:44:50 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+12:44:50 INFO  : 'jtag frequency' command is executed.
+12:44:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+12:44:53 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:44:53 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:44:53 INFO  : Context for processor 'microblaze_0' is selected.
+12:44:53 INFO  : System reset is completed.
+12:44:56 INFO  : 'after 3000' command is executed.
+12:44:56 INFO  : Context for processor 'microblaze_0' is selected.
+12:44:56 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'microblaze_0'.
+12:44:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf
+----------------End of Script----------------
+
+12:44:56 INFO  : Memory regions updated for context MicroBlaze #0
+12:44:56 INFO  : Memory regions updated for context MicroBlaze #0
+12:44:57 INFO  : Context for processor 'microblaze_0' is selected.
+12:44:57 INFO  : 'con' command is executed.
+12:44:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+12:44:57 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_release_mem_test.elf_on_local.tcl'
+12:45:45 INFO  : Disconnected from the channel tcfchan#13.
+10:15:17 INFO  : Launching XSCT server: xsct.bat -interactive C:\hdl_projects\mb_linux\mb_linux.sdk\temp_xsdb_launch_script.tcl
+10:15:21 INFO  : XSCT server has started successfully.
+10:15:21 INFO  : Successfully done setting XSCT server connection channel  
+10:15:24 INFO  : Successfully done setting SDK workspace  
+10:15:32 INFO  : Registering command handlers for SDK TCF services
+10:15:32 INFO  : Processing command line option -hwspec C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf.
+10:15:32 INFO  : ***** MYVIVADO is set to 'C:\Xilinx\Vivado\2017.4\patches\AR70530\vivado' *****
+10:15:33 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:15:33 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1555837940439,  Project:1552824046261
+10:15:33 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf.
+10:15:49 INFO  : Copied contents of C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+10:15:52 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:15:58 INFO  : 
+10:15:59 INFO  : Updating hardware inferred compiler options for hw_test_app.
+10:16:00 INFO  : Updating hardware inferred compiler options for mem_test.
+10:16:01 INFO  : Updating hardware inferred compiler options for peripheral_test.
+10:16:01 INFO  : Clearing existing target manager status.
+10:16:01 INFO  : Closing and re-opening the MSS file of ther project hw_test_app_bsp
+10:16:02 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+10:16:04 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+10:30:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:30:45 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+10:30:45 INFO  : 'jtag frequency' command is executed.
+10:30:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+10:30:48 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:30:48 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:30:49 INFO  : Context for processor 'microblaze_0' is selected.
+10:30:49 INFO  : System reset is completed.
+10:30:52 INFO  : 'after 3000' command is executed.
+10:30:52 INFO  : Context for processor 'microblaze_0' is selected.
+10:30:52 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'microblaze_0'.
+10:30:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf
+----------------End of Script----------------
+
+10:30:53 INFO  : Memory regions updated for context MicroBlaze #0
+10:30:53 INFO  : Memory regions updated for context MicroBlaze #0
+10:30:53 INFO  : Context for processor 'microblaze_0' is selected.
+10:30:54 INFO  : 'con' command is executed.
+10:30:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+10:30:54 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_release_mem_test.elf_on_local.tcl'
+10:31:26 INFO  : Disconnected from the channel tcfchan#1.
+10:31:51 INFO  : Launching XSCT server: xsct.bat -interactive C:\hdl_projects\mb_linux\mb_linux.sdk\temp_xsdb_launch_script.tcl
+10:31:54 INFO  : XSCT server has started successfully.
+10:31:54 INFO  : Successfully done setting XSCT server connection channel  
+10:31:56 INFO  : Successfully done setting SDK workspace  
+10:31:59 INFO  : Registering command handlers for SDK TCF services
+10:31:59 INFO  : Processing command line option -hwspec C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf.
+10:31:59 INFO  : ***** MYVIVADO is set to 'C:\Xilinx\Vivado\2017.4\patches\AR70530\vivado' *****
+10:32:00 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:53:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:53:22 INFO  : Jtag cable 'Digilent Arty A7-100T 210319A92B5BA' is selected.
+10:53:22 INFO  : 'jtag frequency' command is executed.
+10:53:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0' command is executed.
+10:53:26 INFO  : FPGA configured successfully with bitstream "C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+10:53:26 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+10:53:26 INFO  : Context for processor 'microblaze_0' is selected.
+10:53:26 INFO  : System reset is completed.
+10:53:29 INFO  : 'after 3000' command is executed.
+10:53:29 INFO  : Context for processor 'microblaze_0' is selected.
+10:53:29 INFO  : The application 'C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf' is downloaded to processor 'microblaze_0'.
+10:53:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA" && level==0} -index 0
+fpga -file C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+dow C:/hdl_projects/mb_linux/mb_linux.sdk/mem_test/Debug/mem_test.elf
+----------------End of Script----------------
+
+10:53:29 INFO  : Memory regions updated for context MicroBlaze #0
+10:53:29 INFO  : Memory regions updated for context MicroBlaze #0
+10:53:30 INFO  : Context for processor 'microblaze_0' is selected.
+10:53:30 INFO  : 'con' command is executed.
+10:53:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Arty A7-100T 210319A92B5BA"} -index 0
+con
+----------------End of Script----------------
+
+10:53:30 INFO  : Launch script is exported to file 'C:\hdl_projects\mb_linux\mb_linux.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_release_mem_test.elf_on_local.tcl'
+10:58:46 INFO  : Disconnected from the channel tcfchan#1.
+13:31:27 INFO  : Launching XSCT server: xsct.bat -interactive C:\hdl_projects\mb_linux\mb_linux.sdk\temp_xsdb_launch_script.tcl
+13:31:31 INFO  : XSCT server has started successfully.
+13:31:38 INFO  : Successfully done setting XSCT server connection channel  
+13:31:39 INFO  : Successfully done setting SDK workspace  
+13:31:43 INFO  : Registering command handlers for SDK TCF services
+13:31:44 INFO  : ***** MYVIVADO is set to 'C:\Xilinx\Vivado\2017.4\patches\AR70530\vivado' *****
+13:31:50 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1555844481954,  Project:1555837940439
+13:31:50 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+13:31:53 INFO  : Copied contents of C:/hdl_projects/mb_linux/mb_linux.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+13:31:53 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:31:59 INFO  : 
+13:32:00 INFO  : Updating hardware inferred compiler options for hw_test_app.
+13:32:01 INFO  : Updating hardware inferred compiler options for mem_test.
+13:32:02 INFO  : Updating hardware inferred compiler options for peripheral_test.
+13:32:02 INFO  : Clearing existing target manager status.
